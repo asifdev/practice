@@ -1,0 +1,18 @@
+<!-- File: chapter2/creating-controller.html -->
+<html ng-app="notesApp">
+    <head>
+        <title>Hello AngularJS</title>
+    </head> 
+    <body ng-controller="MainCtrl as ctrl">
+        {{ctrl.message}} AngularJS.<br/>
+        <div ng-repeat="note in ctrl.notes">
+            <span>
+        	{{note.label}} <br />
+        	{{note.done}}
+            </span>
+        </div>
+        <button ng-click="ctrl.changeMessage()">Change</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"> </script>
+        <script src="app/app-main-page.js"></script>
+    </body>
+</html>
